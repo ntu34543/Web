@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="../anh/30anh2.webp" type="image/x-icon">
+    <link rel="stylesheet" href="../CSS/user_den.css">
+    <link rel="stylesheet" href="../CSS/back_to_top.css">
+    <link rel="stylesheet" href="../CSS/home_minh.css">
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://fontawesome.com/v5.15/icons/500px?style=brands">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <!-- Minh homepage -->
+    <div id="header">
+        <div class="header-logo">
+            <a href="../HTML/home_minh.html"><img class="desktop-logo" src="../anh/anh22dddddddddddddddd.png" alt="grocerystore-shop"></a>
+            <div class="menu-header">
+                <nav id="menu-menu">
+                    <ul class="layers">
+                        <li>
+                            <a href="#" style="color: #7DA63F;"> <u>Trang chủ</u><i style="margin-left: 9px;" class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="#">Trang chủ 1</a></li>
+                                <li><a href="#">Trang chủ 2 </a></li>
+                                <li><a href="#">Trang chủ 3</a></li>
+                                <li><a href="#">Trang chủ 4</a></li>
+                                <li><a href="#">Trang chủ 5</a></li>
+                                <li><a href="#">Trang chủ 6</a></li>
+                                <li><a href="#">Trang chủ 7</a></li>
+                                <li><a href="#">Trang chủ 8</a></li>
+                                <li><a href="#">Trang chủ 9</a></li>
+                                <li><a href="#">Trang chủ 10</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Shop<i  style="margin-left: 9px;" class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <table style="width:100%; color: black;">
+                                    <tr style="color: #7DA63F;">
+                                        <th>Công ty</th>
+                                        <th>Liên hệ</th>
+                                        <th>Quốc gia</th>
+                                        <th>Quốc gia</th>
+                                    </tr>
+                                    <tr>
+                                        <td>Alfreds Futterkiste</td>
+                                        <td>Maria Anders</td>
+                                        <td>Germany</td>
+                                        <td>Germany</td>
+
+                                    </tr>
+                                    <tr>
+                                        <td>Alfreds Futterkiste</td>
+                                        <td>Maria Anders</td>
+                                        <td>Germany</td>
+                                        <td>Germany</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alfreds Futterkiste</td>
+                                        <td>Maria Anders</td>
+                                        <td>Germany</td>
+                                        <td>Germany</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alfreds Futterkiste</td>
+                                        <td>Maria Anders</td>
+                                        <td>Germany</td>
+                                        <td>Germany</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alfreds Futterkiste</td>
+                                        <td>Maria Anders</td>
+                                        <td>Germany</td>
+                                        <td>Germany</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Alfreds Futterkiste</td>
+                                        <td>Maria Anders</td>
+                                        <td>Germany</td>
+                                        <td>Germany</td>
+                                    </tr>
+                                </table>
+
+                            </ul>
+                        </li>
+                        <li><a href="#">Thu thập<i style="margin-left: 9px;" class="fas fa-angle-down"></i></a>
+                            <!-- <ul>
+                                <table style="width:1000px; margin-left: -90px; color: black;">
+                                    <tr style="color: #7DA63F;">
+                                        <th><img src="anh/foody-upload-api-foody-mobile-cv-041fa799-210716142843.jpeg" alt=""></th>
+                                        <th><img src="anh/foody-upload-api-foody-mobile-cv-041fa799-210716142843.jpeg" alt=""></th>
+                                        <th><img src="anh/foody-upload-api-foody-mobile-cv-041fa799-210716142843.jpeg" alt=""></th>
+                                    </tr>
+                                </table>
+                            </ul> -->
+                        </li>
+                        <li><a href="#">Blogs<i style="margin-left: 9px;" class="fas fa-angle-down"></i></a>
+                            <ul>
+                                <li><a href="#">Trang chủ 1</a></li>
+                                <li><a href="#">Trang chủ 2 </a></li>
+                                <li><a href="#">Trang chủ 3</a></li>
+                                <li><a href="#">Trang chủ 4</a></li>
+                                <li><a href="#">Trang chủ 5</a></li>
+                                <li><a href="#">Trang chủ 6</a></li>
+                                <li><a href="#">Trang chủ 7</a></li>
+                                <li><a href="#">Trang chủ 8</a></li>
+                                <li><a href="#">Trang chủ 9</a></li>
+                                <li><a href="#">Trang chủ 10</a></li>
+                            </ul>
+                        </li>
+                        <li onclick="show_order_history()"><a href="#">Lịch sử</a></li>
+                        <!-- <button onclick="show_order_history()" class="myBtn myBtn-history navbar__links" id="about-page"></button> -->
+                        <div class="searching">
+                            <div class="search-container">
+                                <select name="" id="type_item">
+                                    <option value=""disabled selected>Tìm kiếm sản phẩm</option>
+                                    <option value="RAU ĂN LÁ">rau ăn lá</option>
+                                    <option value="RAU ĂN QUẢ">rau ăn quả</option>
+                                    <option value="RAU CỦ SẤY KHÔ">rau củ sấy khô</option>
+                                    <option value="RAU CỦ ĐÓNG HỘP">rau củ đóng hộp</option>
+                                    <option value="ĐẬU HŨ & NẤM">đậu hũ và nấm</option>
+                                    <option value="RAU ĂN CỦ">rau ăn củ</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <button id="btn-search-" onclick="showItem()" type="submit"><i class="fa fa-search"></i></button>
+                        <div class="icon">
+                            <p onclick="cartFunction()"><i class="fas fa-shopping-cart icon" style="cursor: pointer;"></i></p>
+                        </div>
+                        <div class="fillinfor">
+                            <p>
+                                <a class="logOut-cart" href="../HTML/home_minh.html" onclick="reloadLogOut()">Đăng xuất</a>
+                            </p>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!-- Minh homepage -->
+    <!-- Den homepage -->
+    <!-- Navbar Section -->
+    <!-- <nav class="navbar">
+        <div class="navbar__container">
+            <a href="../HTML/home_minh.html" id="navbar__logo"> <img src="../anh/30anh5.gif" alt="" style="margin-left: -90px; width: 90px;"> Rau_Sạch</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span> <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="#home" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">About_US</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about" class="navbar__links" id="about-page">Advice</a>
+                </li>
+                <li class="navbar__item">
+                    <button onclick="show_order_history()" class="myBtn myBtn-history navbar__links" id="about-page">History</button>
+                </li>
+                <li class="navbar__item">
+                    <a href="../HTML/login.html" class="navbar__links" id="about-page">Logout</a>
+                </li>
+                <li>
+                    <div class="search-container">
+                        <select name="" id="type_item">
+                            <option value=""disabled selected>Tìm kiếm sản phẩm</option>
+                            <option value="RAU ĂN LÁ">rau ăn lá</option>
+                            <option value="RAU ĂN QUẢ">rau ăn quả</option>
+                            <option value="RAU CỦ SẤY KHÔ">rau củ sấy khô</option>
+                            <option value="RAU CỦ ĐÓNG HỘP">rau củ đóng hộp</option>
+                            <option value="ĐẬU HŨ & NẤM">đậu hũ và nấm</option>
+                            <option value="RAU ĂN CỦ">rau ăn củ</option>
+                        </select>
+                        <button id="" onclick="showItem()" type="submit"><i class="fa fa-search"></i></button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav> -->
+    <!-- Den homepage -->
+    <!-- <div>
+        <button type="button" id="logo" onclick="getData()">Danh mục sản phẩm</button>
+    </div> -->
+    <div id="cart-pr">
+        <div class="content-voucher">
+            <div>
+                <img class="img-voucher-" src="../IMG/banner-slider-4.jpg" alt="">
+            </div>
+            <div>
+                <img class="img-voucher" src="../IMG/banner-right-2.jpg" alt="">
+                <p class="hr-voucher"></p>
+                <img class="img-voucher" src="../IMG/banner-right-5.jpg" alt="">
+                <p class="hr-voucher"></p>
+                <img class="img-voucher" src="../IMG/banner-right-10.jpg" alt="">
+                <p class="hr-voucher"></p>
+            </div>
+        </div>
+        <div class="content2-pr">
+            <h2 onclick="getData()" id="logo">Danh mục sản phẩm</h2>
+        </div>
+        <div id="san_pham">
+            <div id="type-san_pham">
+                <div id="type-rau">
+                    <p>RAU CỦ</p>
+                    <p>RAU ĂN LÁ</p>
+                    <p>RAU ĂN QUẢ</p>
+                    <p>RAU ĂN CỦ</p>
+                    <p>RAU CỦ ĐÓNG HỘP</p>
+                    <p>RAU CỦ SẤY KHÔ</p>
+                </div>
+                <div id="type-pr">
+                    <p><b>TRÁI CÂY</b></p>
+                    <p><b>RAU CỦ</b></p>
+                    <p><b>THỨC UỐNG</b></p>
+                    <p><b>GIA VỊ & PHỤ LIỆU</b></p>
+                    <p><b>THỊT & TRỨNG</b></p>
+                    <p><b>HÀNG KHÔ</b></p>
+                    <p><b>KEM,BƠ & PHÔ MAI</b></p>
+                    <p><b>THỦY HẢI SẢN</b></p>
+                    <p><b>THỨC UỐNG CÓ CỒN</b></p>
+                    <p><b>PHI THỰC PHẨM</b></p>
+                </div>
+                <div id="type-pr-none">
+                    <div>
+                        <img id="type-pr-none-img" src="../IMG/hinh-anh-dep-ve-rau-cu-qua-lalalalala-1.jpg" alt=""></div>
+                    <div id="type-rau-none">
+                        <p><b>RAU ĂN LÁ</b></p>
+                        <p>Xà Lách</p>
+                        <p>Rau Cải</p>
+                        <p>Bông Cải</p>
+                        <p>Rau Gia Vị</p>
+                        <p>Bắp Cải</p>
+                        <p>Rau Roquette</p>
+                        <p>Rau Ăn Lá Khác</p>
+                    </div>
+                    <div id="type-rau-none">
+                        <p><b>RAU ĂN QUẢ</b></p>
+                        <p>Cà Chua</p>
+                        <p>Cà Tím</p>
+                        <p>Các Loại Đậu - Hạt</p>
+                        <p>Ớt</p>
+                        <p>Khổ Qua</p>
+                        <p>Dưa Leo</p>
+                        <p>Bầu, Bí & Mướp</p>
+                    </div>
+                    <div id="type-rau-none">
+                        <p><b>RAU ĂN CỦ</b></p>
+                        <p>Củ cải</p>
+                        <p>Cà Rốt</p>
+                        <p>Bông Cải</p>
+                        <p>Củ Gia Vị</p>
+                        <p>Các Củ Khác</p>
+                        <p>Khoai Các Loại</p>
+                        <p>Đậu Hủ & Nấm</p>
+                    </div>
+                    <div id="type-rau-none">
+                        <p><b>RAU CỦ ĐÓNG HỘP</b></p>
+                        <p>Oliu Xanh</p>
+                        <p>Cà Chua Đóng Hộp</p>
+                        <p>Nụ Bạch Hoa</p>
+                        <p>Củ Dền Ngâm</p>
+                        <p>Đậu Hầm</p>
+                        <p>Kim Chi</p>
+                        <p>Hoa Atiso Ngâm</p>
+                    </div>
+                </div>
+            </div>
+            <div id="product">
+            </div>
+        </div>
+    </div>
+    <!-- Giỏ hàng -->
+    <div id="gio_hang">
+        <div id="shopping-cart">
+            <h2>Shopping cart</h2>
+            <div>
+                <button id="button2" type="button" onclick="xdThanhtoan()">Tiến hành thanh toán</button>
+                <button id="button2" type="button" onclick="moveHome()">Tiếp tục mua hàng</button>
+            </div>
+            <div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Hình ảnh</th>
+                            <th>Tên sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Đơn giá</th>
+                            <th>Ngày đặt</th>
+                            <th>Tổng cộng</th>
+                            <th>Xóa sản phẩm</th>
+                        </tr>
+                    </thead>
+                    <tbody id="table1">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <!-- thanh toán -->
+    <div id="thanh_toan">
+        <div class="payment">
+            <!-- Xác nhận đơn hàng -->
+            <div>
+                <h2 class="h2Pay"><i class="fab fa-cc-amazon-pay"></i> Hình thức thanh toán</h2>
+                <div>
+                    <select name="" id="payment">
+                        <option value=""disabled selected>Lựa chọn phương thức thanh toán</option>
+                        <option  value="Internet Banking/ATM">Internet Banking/ATM</option>
+                        <option  value="Thanh toán bằng tiền mặt">Thanh toán bằng tiền mặt</option>
+                    </select>
+                </div>
+                <h2 class="h2"><i class="fas fa-check-circle"></i> Xác nhận đơn hàng</h2>
+                <div>
+                    <table class="table2">
+                        <thead>
+                            <tr>
+                                <th>Hình</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Đơn giá</th>
+                                <th>Số lượng</th>
+                                <th>Ngày đặt</th>
+                                <th>Tổng cộng</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table2">
+
+                        </tbody>
+                    </table>
+                    <h6 id="sum_payment"></h6>
+                </div>
+            </div>
+            <!-- Thông tin khách hàng -->
+            <div>
+                <h2 class="h2"><i class="fas fa-info"></i> Thông tin khách hàng</h2>
+                <div>
+                    <button id="button4" type="submit" onclick="checkInformation()">Xác nhận mua</button>
+                </div>
+                <form action="" class="">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="cus_name"><i class="fas fa-user"></i> Tên khách hàng</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" name="" id="cus_name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="cus_phone"><i class="fas fa-mobile"></i> Số điện thoại</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" name="" id="cus_phone">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="cus_email"><i class="fas fa-mobile"></i> Email</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" name="" id="cus_email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="city"><i class="fas fa-mobile"></i> Thành phố/tỉnh thành</label>
+                        </div>
+                        <div class="col-75">
+                            <select name="" id="city">
+                                <option value=""disabled selected>Lựa chọn thành phố/tỉnh thành bạn đang sống</option>
+                                <option value="Đà Nẵng">Đà Nẵng</option>
+                                <option value="Quảng Nam">Quảng Nam</option>
+                                <option value="Huế">Huế</option>
+                                <option value="Quảng Bình">Quảng Bình</option>
+                                <option value="Quảng Trị">Quảng Trị</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="cus_address"><i class="fas fa-map-marker-alt"></i> Địa chỉ cụ thể</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" name="" id="cus_address">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="note"><i class="fas fa-sticky-note"></i> Ghi chú</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea name="" id="cus_note"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- customer_bill -->
+    <!-- <div id="customer_bill">
+        <div>
+            <button id="button2" onclick="moveHomePage()" type="submit" style="margin-top: 70px;">Quay lại trang chủ</button>
+        </div>
+        <div id="">
+            <div>
+                <h2 style="text-align: center;">Hóa đơn của bạn</h2>
+            </div>
+            <div id="bill-pdf">
+                <div id="title">
+                    <div>
+                        <img class="img-bill-logo" src="../Untitled-26.png" alt="">
+                    </div>
+                    <div>
+                        <h2 class="h2">Rau sạch</h2>
+                        <p>101B,Lê Hữu Trác, Sơn Trà, Đà Nẵng <br>Hotline: 0392328539</p>
+                    </div>
+                </div>
+                <div id="bill_information">
+
+                    <div>
+                        <div>
+                            <h6 style="color: crimson;">Địa chỉ nhận hàng</h6>
+                        </div>
+                        <div id="customer_address1"></div>
+                        <div id="customer_address2"></div>
+                        <div id="customer_address3"></div>
+                    </div>
+                    <div>
+                        <div id="date_orders"></div>
+                        <div id="date_recieve"></div>
+                    </div>
+                </div>
+                <div>
+                    <table class="table4">
+                        <thead>
+                            <tr>
+                                <th>Hình ảnh</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Đơn giá</th>
+                                <th>Số lượng</th>
+                                <th>Tổng cộng</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table4">
+
+                        </tbody>
+                    </table>
+                    <div id="comment"></div>
+                </div>
+                <div id="bills">
+                    <div id="payment_method"></div>
+                    <div id="discounts"></div>
+                    <div id="bill_payment"></div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- customer_bill Tú -->
+    <div id="customer_bill">
+        <div>
+            <button id="button2" onclick="moveHomePage()" type="submit" style="margin-top: 70px;">Quay lại trang chủ</button>
+        </div>
+        <div>
+            <h2 style="text-align: center;">Hóa đơn của bạn</h2>
+        </div>
+        <div id="PDF">
+            <div id="PDF-header">
+                <div id="PDF-bill-left">
+                    <img id="logo-web-PDF" src="../anh/anh22dddddddddddddddd.png" alt="">
+                </div>
+                <div id="PDF-bill-right">
+                    <p id="PDF-p">RAU SẠCH</p>
+                    <p id="PDF-p2">Địa chỉ: 101B,Lê Hữu Trác, Sơn Trà, Đà Nẵng <br>Hotline: 0392328539</p>
+                </div>
+            </div>
+            <div id="PDF-under">
+                <p id="PDF-p1"><b>Thông tin đơn hàng:</b></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Tên khách hàng</td>
+                            <td>Số điện thoại</td>
+                            <td>Địa chỉ</td>
+                        </tr>
+                    </thead>
+                    <tbody id="PDF-inf-user">
+                    </tbody>
+                </table>
+            </div>
+            <div id="PDF-under-pr">
+                <p id="PDF-p1"><b>Thông tin sản phẩm:</b></p>
+                <table>
+                    <thead>
+                        <tr>
+                            <td>Tên sản phẩm</td>
+                            <td>Đơn giá</td>
+                            <td>Số lượng</td>
+                            <td>Tổng cộng</td>
+                        </tr>
+                    </thead>
+                    <tbody id="table4">
+                    </tbody>
+                </table>
+            </div>
+            <div id="PDF-under-paymentt">
+                <div><img id="LXL-PDF" src="../IMG/anh-loi-cam-on-dep_043633845.jpg" alt=""></div>
+                <div id="PDF-under-payment">
+                    <div id="comment"></div>
+                    <div id="payment_method"></div>
+                    <div id="discounts"></div>
+                    <div id="date_orders"></div>
+                    <div id="date_recieve"></div>
+                    <div id="bill_payment"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- customer_bill Tú -->
+    <div class="footer__container">
+        <div class="footer__links">
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Về chúng tôi</h2>
+                    <a href="#sign__up">Làm việc như thế nào</a> <a href="/">Lời chứng thực</a>
+                    <a href="#">Nghề nghiệp</a> <a href="#">Điều khoản dịch vụ</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Liên hệ chúng tôi</h2>
+                    <a href="#">Liên hệ: 0392 328 539</a> <a href="#">Hỗ trợ</a>
+                    <a href="#">Các điểm đến</a>
+                </div>
+            </div>
+            <div class="footer__link--wrapper">
+                <div class="footer__link--items">
+                    <h2>Videos</h2>
+                    <a href="#">Gửi video</a> <a href="#">Đại sứ</a>
+                    <a href="#">Đại lý</a>
+                </div>
+                <div class="footer__link--items">
+                    <h2>Mạng xã hội</h2>
+                    <a href="#">Instagram</a> <a href="#">Facebook</a>
+                    <a href="#">Youtube</a> <a href="#">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <section class="social__media">
+            <div class="social__media--wrap">
+                <div class="footer__logo">
+                    <a href="#" id="footer__logo">Rau_Sạch</a>
+                </div>
+                <p class="website__rights">© MÀU SẮC 2020. Đã đăng ký Bản quyền(Bản quyền của Minh)</p>
+                <div class="social__icons">
+                    <a href="#" class="social__icon--link" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social__icon--link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social__icon--link"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="social__icon--link"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social__icon--link"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Modal TN -->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <table class="modal_history_Users">
+                    <thead>
+                        <tr>
+                            <th>STT</th>
+                            <th>Ngày đặt</th>
+                            <th>Hình ảnh</th>
+                            <th>Sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Đơn giá</th>
+                            <th>Tổng tiền</th>
+                            <th>Ngày giao</th>
+                        </tr>
+                    </thead>
+                    <tbody id="history_order"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js "></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_oKSaOLYwSj6CKiyBIKqZM");
+        })();
+    </script>
+    <script src="../JS/user_den.js"></script>
+    <script src="../JS/back_to_top.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,420 @@
+* {
+    padding: 0;
+    margin: 0 1px;
+    box-sizing: border-box;
+    font-family: Sans-serif;
+}
+
+
+/* admin_container */
+
+.admin_container {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+/* admin_left */
+
+.admin_left {
+    width: 400px;
+    height: 969px;
+    left: 0;
+    background-color: #56af25;
+    position: fixed;
+}
+
+.p_head a,
+.p_content p,
+.p_content a,
+.p_footer a {
+    color: white;
+}
+
+.p_head {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+.p_content {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.p_padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+
+:active.p_padding {
+    color: yellow;
+}
+
+.p_border {
+    border: 1px solid white;
+}
+
+.p_head>a {
+    text-decoration: none;
+}
+
+.p_footer {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 100%;
+    margin-left: 180px;
+    text-align: center;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.p_footer>a>i {
+    padding-top: 15px;
+}
+
+
+/* admin bên phải của tất cả */
+
+.admin_right_of_all {
+    width: 1546px;
+    height: auto;
+    margin-left: 359px;
+    /* background-color: #ecedf1; */
+    background-image: url(../IMG/anh-chup-rau-cu-qua_112150407.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300vh;
+    background-attachment: fixed;
+}
+
+
+/* header {
+    background-image: url(../img/jordan1.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+} */
+
+
+/* admin bên phải của tất cả */
+
+
+/* Trang chủ */
+
+.content-left-trang-chu {
+    width: 1500px;
+    height: auto;
+    margin-left: 55px;
+    display: flex;
+}
+
+.content1 h4 {
+    color: #fbff00;
+}
+
+.content1 img {
+    width: 30px;
+    height: 40px;
+    margin-left: 190px;
+    margin-top: -69px;
+}
+
+.content1 {
+    float: left;
+    background-color: #000000;
+    color: white;
+    opacity: 0.8;
+    padding: 10px;
+    margin: 30px;
+    /* border: 1px double white; */
+    width: 315px;
+    height: 103px;
+    border-left: 6px double #2C54C6;
+    box-shadow: 3px 3px 3px 3px white;
+    border-radius: 9px;
+}
+
+
+/* Quản lý sản phẩm theo (d,m,y) */
+
+#save-date-pr {
+    margin-left: 20px;
+    font-size: 18px;
+    background-color: rgb(31, 31, 175);
+    color: white;
+    width: 50px;
+    height: 33px;
+    border: 0;
+    outline: 0;
+}
+
+#date_bills {
+    padding-top: 5px;
+}
+
+#date_product {
+    margin-top: 5px;
+    font-size: 20px;
+    opacity: 0.9;
+    color: white;
+    background-color: rgb(49, 46, 46);
+    border: 0;
+    outline: 0;
+}
+
+
+/* Quản lý sản phẩm theo (d,m,y) */
+
+
+/* Trang chủ */
+
+
+/* Quản lý khách hàng */
+
+.admin_right_user {
+    width: 1500px;
+    height: auto;
+    margin-left: 55px;
+}
+
+.p_on_user {
+    padding: 10px;
+    font-size: 20px;
+    color: #4268D6;
+    border-bottom: 1px solid black;
+    box-shadow: 0 0 10px black;
+    background-color: #e7eeec;
+    width: 1480px;
+    opacity: 0.9;
+}
+
+.table_user {
+    margin-top: 10px;
+    width: 1480px;
+    background-color: black;
+    opacity: 0.9;
+    color: white;
+}
+
+
+/* Quản lý khách hàng */
+
+
+/* Quản lý sản phẩm */
+
+
+/* admin_right */
+
+.admin_right {
+    width: 1530px;
+    height: auto;
+    display: none;
+}
+
+.admin_right_on {
+    margin-left: 110px;
+}
+
+.admin_right_on>.p_on {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #4268D6;
+    border-bottom: 1px solid black;
+    box-shadow: 0 0 10px black;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.frm_input {
+    display: flex;
+    padding-top: 10px;
+}
+
+.frm_input input {
+    width: 650px;
+}
+
+.input-group-text {
+    border: 1px solid gray;
+    font-size: 20px;
+    background-color: #000000;
+    color: white;
+    opacity: 0.8;
+}
+
+.input-group-text-right {
+    margin-left: 200px;
+}
+
+.form-control {
+    height: 40px;
+    font-size: 20px;
+    margin-right: 60px;
+    background-color: black;
+    color: white;
+    opacity: 0.9;
+}
+
+.frm_btn {
+    padding-top: 10px;
+}
+
+#add,
+#reset,
+#update {
+    color: white;
+    width: 100px;
+    height: 35px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+#add {
+    background-color: #4E73DF;
+}
+
+#reset {
+    background-color: #F6C23E;
+    margin-top: 10px;
+}
+
+#update {
+    background-color: #F6C23E;
+    display: none;
+    margin-top: 10px;
+}
+
+.admin_right_under {
+    padding-top: 20px;
+    padding-left: 80px;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+.admin_right_under>.p_on {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #4268D6;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.table {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    opacity: 0.9;
+}
+
+
+/* <!-- Quản lý sản phẩm --> */
+
+
+/* Quản lý ngày đặt */
+
+.admin_right_date {
+    width: 1470px;
+    height: auto;
+    margin-left: 55px;
+}
+
+.p_on_date {
+    padding: 10px;
+    font-size: 20px;
+    color: #4268D6;
+    border-bottom: 1px solid black;
+    box-shadow: 0 0 10px black;
+    background-color: #e7eeec;
+    opacity: 0.9;
+}
+
+.tbl_Date {
+    margin-top: 5px;
+    background-color: #000000;
+    color: white;
+    opacity: 0.9;
+}
+
+#select_date {
+    padding-top: 10px;
+}
+
+#typeDate {
+    font-size: 20px;
+}
+
+#input_date {
+    padding-top: 5px;
+}
+
+#dates {
+    font-size: 20px;
+}
+
+
+/* .table_user {
+    margin-top: 10px;
+} */
+
+
+/* Quản lý ngày đặt */
+
+
+/* JS Quản lý sản phẩm */
+
+#img-border {
+    height: 60px;
+    border: 1px solid black;
+    border-radius: 100%;
+    width: 80px;
+    height: auto;
+}
+
+#JS_edit,
+#JS_delete {
+    width: 50px;
+    height: 30px;
+    outline: none;
+    border: none;
+}
+
+#JS_edit {
+    background-color: #1CC88A;
+}
+
+#JS_delete {
+    background-color: #E74A3B;
+}
+
+.top {
+    top: 0;
+}
+
+
+/* #JS_price {
+    color: red;
+} */
+
+
+/* JS Quản lý sản phẩm */

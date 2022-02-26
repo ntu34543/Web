@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>Admin page</title>
+    <link rel="icon" href="../anh/30anh2.webp" type="image/x-icon">
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Icon -->
+    <link rel="stylesheet" href="https://fontawesome.com/v5.15/icons/500px?style=brands">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="../CSS/admin_rau.css">
+    <link rel="stylesheet" href="../CSS/nguyen.css">
+    <link rel="stylesheet" href="../CSS/back_to_top.css">
+</head>
+
+<body>
+    <div class="admin_container">
+        <!-- admin_left -->
+        <div class="admin_left">
+            <p class="p_head"><a href=""><i class="fas fa-seedling"></i> ADMIN</a></p>
+            <div class="p_content">
+                <p class="p_border"></p>
+                <p class="p_padding" onclick="show_Home_Page()"><i class="fas fa-house-damage"></i> Trang chủ</p>
+                <p class="p_padding">Quản lý</p>
+                <p class="p_padding" onclick="GetData()"><i class="fas fa-tasks"></i> Quản lý khách hàng</p>
+                <p class="p_padding" onclick="getData()"><i class="fas fa-table"></i> Quản lý sản phẩm</p>
+                <p class="p_padding" onclick="show_Bill()"><i class="fas fa-table"></i> Quản lý đơn hàng</p>
+                <p class="p_padding" onclick="run_Date()"><i class="fas fa-table"></i> Ngày bảo hành web</p>
+                <p class="p_border"></p>
+            </div>
+            <p class="p_footer"><a href=""><i class="fas fa-chevron-left"></i></a></p>
+        </div>
+        <!-- admin bên phải của tất cả -->
+        <div class="admin_right_of_all">
+            <!-- Trang chủ -->
+            <div class="content-left-trang-chu">
+                <div class="content1">
+                    <h4>Số lượng khách hàng</h4>
+                    <p id="show">0</p>
+                    <img src="anh/anh33.jpg" alt="">
+                </div>
+                <div class="content1">
+                    <h4>Số lượng sản phẩm</h4>
+                    <p id="show2">0</p>
+                    <img src="anh/anh33.jpg" alt="">
+                </div>
+                <div class="content1">
+                    <h4>Số lượng đơn hàng</h4>
+                    <p id="buying">0</p>
+                    <img src="anh/anh33.jpg" alt="">
+                </div>
+                <div class="content1">
+                    <h4>Ngày bảo hành web</h4>
+                    <p id="date">0</p>
+                    <img src="anh/anh33.jpg" alt="">
+                </div>
+                <div class="content1">
+                    <h4>Số lượng đơn hàng theo (d,m,y)</h4>
+                    <div>
+                        <input type="date" id="date_product" placeholder="nhập ngày">
+                        <button onclick="show_date_pr()" id="save-date-pr">Lưu</button>
+                    </div>
+                    <p id="date_bills"></p>
+                </div>
+            </div>
+            <!-- Trang chủ -->
+            <!-- Quản lý khách hàng -->
+            <div class="admin_right_user">
+                <p class="p_on_user">Thông tin khách hàng</p>
+                <table class="table_user">
+                    <thead>
+                        <tr id="tr">
+                            <th>Mã</th>
+                            <th>Tên người dùng</th>
+                            <th>Số điện thoại</th>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>Lịch sử</th>
+                            <th>Xóa</th>
+                        </tr>
+                    </thead>
+                    <tbody id="user"></tbody>
+                </table>
+                <!-- Modal TNguyen -->
+                <div id="myModal_History" class="modal-QLKH">
+                    <div class="modal-content-QLKH">
+                        <span class="close-QLKH" onclick="closeQLKH()">&times;</span>
+                        <table class="tbl">
+                            <thead>
+                                <tr>
+                                    <th>Số thứ tự</th>
+                                    <th>Ngày đặt</th>
+                                    <th>Sản phẩm</th>
+                                    <th>Số lượng</th>
+                                    <th>Đơn giá</th>
+                                    <th>Tổng tiền</th>
+                                    <th>Ngày giao</th>
+                                </tr>
+                            </thead>
+                            <tbody id="history_order_Users"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Quản lý khách hàng -->
+            <!-- Quản lý sản phẩm -->
+            <!-- admin_right -->
+            <div class="admin_right">
+                <div class="admin_right_on">
+                    <p class="p_on">Thêm sản phẩm</p>
+                    <div class="frm_input">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Thể loại:</span>
+                        </div>
+                        <!--  -->
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3" style="left: 624px;position: relative;">Hình:</span>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="frm_input">
+                        <input type="text" class="form-control" id="categoryProduct" />
+                        <!--  -->
+                        <input type="text" class="form-control" id="imgProduct" />
+                    </div>
+                    <!--  -->
+                    <div class="frm_input">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Tên sản phẩm:</span>
+                        </div>
+                        <!--  -->
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3" style="left: 570px;position: relative;">Số lượng:</span>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="frm_input">
+                        <!--  -->
+                        <input type="text" class="form-control" id="nameProduct" />
+                        <!--  -->
+                        <input type="text" class="form-control" id="quantityProduct" />
+                    </div>
+                    <!--  -->
+                    <div class="frm_input">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3">Đơn giá:</span>
+                        </div>
+                        <!--  -->
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="basic-addon3" style="left: 626px;position: relative;">Ghi chú:</span>
+                        </div>
+                    </div>
+                    <!--  -->
+                    <div class="frm_input">
+                        <!--  -->
+                        <input type="text" class="form-control" id="priceProduct" />
+                        <!--  -->
+                        <input type="text" class="form-control" id="noteProduct" />
+                    </div>
+                    <!--  -->
+                    <div class="frm_btn">
+                        <button type="submit" id="add" onclick="add()">Lưu</button>
+                        <button type="button" id="reset" onclick="reset()">Hoàn tác</button>
+                        <button type="button" id="update" onclick="update(document.getElementById('update').value)">Cập nhật</button>
+                    </div>
+                </div>
+                <div class="admin_right_under">
+                    <p class="p_on">Loại sản phẩm</p>
+                    <table class="table">
+                        <thead>
+                            <tr id="tr">
+                                <th>Mã</th>
+                                <th>Thể loại</th>
+                                <th>Hình</th>
+                                <th>Tên sản phẩm</th>
+                                <th>Số lượng</th>
+                                <th>Đơn giá</th>
+                                <th>Ghi chú</th>
+                                <th>Sửa</th>
+                                <th>Xóa</th>
+                            </tr>
+                        </thead>
+                        <tbody id="product"></tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Quản lý sản phẩm -->
+            <!-- Quản lý đơn hàng -->
+            <div class="admin_right_bill">
+                <h2 class="p_on_bill">Quản Lý Đơn Hàng</h2>
+                <table class="tbl">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Ngày đặt</th>
+                            <th>Id user</th>
+                            <th>Tên đăng nhập</th>
+                            <th>Đơn đặt</th>
+                            <th>Tổng tiền</th>
+                            <th>Xóa</th>
+                        </tr>
+                    </thead>
+                    <tbody id="orders"></tbody>
+                </table>
+                <!-- The modal -->
+                <div id="myModal" class="modal">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <table class="tbl">
+                            <thead>
+                                <tr>
+                                    <th>Số thứ tự</th>
+                                    <th>Sản phẩm</th>
+                                    <th>Số lượng</th>
+                                    <th>Giá</th>
+                                    <th>Tổng tiền</th>
+                                </tr>
+                            </thead>
+                            <tbody id="detail_order"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Quản lý đơn hàng -->
+            <!-- Quản lý ngày đặt -->
+            <div class="admin_right_date">
+                <p class="p_on_date">Thông tin ngày bảo hành web</p>
+                <div id="select_date">
+                    <select name="typeDate" id="typeDate">
+                        <option value="Ngày nghỉ, hết rau">Ngày nghỉ, hết rau</option>
+                        <option value="Ngày nghỉ, còn rau">Ngày nghỉ, còn rau</option>
+                    </select>
+                </div>
+                <div id="input_date">
+                    <input type="date" id="dates" placeholder="nhập ngày">
+                </div>
+                <div>
+                    <button id="add" onclick="save_Date()">Save</button>
+                    <button id="reset" onclick="reset_Date()" type="reset">Reset</button>
+                </div>
+                <table class="tbl_Date">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Ngày đặt</th>
+                            <th>Tình trạng</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody id="addDate"></tbody>
+                </table>
+            </div>
+            <!-- Quản lý ngày đặt -->
+        </div>
+        <!-- admin bên phải của tất cả -->
+    </div>
+    <!-- Modal TNguyen -->
+    <div id="myModal_History" class="modal-QLKH">
+        <div class="modal-content-QLKH">
+            <span class="close-QLKH">&times;</span>
+            <table class="tbl">
+                <thead>
+                    <tr>
+                        <th>Số thứ tự</th>
+                        <th>Ngày đặt</th>
+                        <th>Sản phẩm</th>
+                        <th>Số lượng</th>
+                        <th>Đơn giá</th>
+                        <th>Tổng tiền</th>
+                        <th>Ngày giao</th>
+                    </tr>
+                </thead>
+                <tbody id="history_order_Users"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js "></script>
+    <script src="../JS/admin1.js"></script>
+    <script src="../JS/user_inf.js"></script>
+    <script src="../JS/Admin_Rau_sạch.js"></script>
+    <script src="../JS/quanlydonhang.js"></script>
+    <script src="../JS/modal.js"></script>
+    <script src="../JS/date_inf.js"></script>
+    <script src="../JS/back_to_top.js"></script>
+</body>
+
+</html>

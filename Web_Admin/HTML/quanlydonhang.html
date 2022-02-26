@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý đơn hàng</title>
+    <link rel="icon" href="../anh/30anh2.webp" type="image/x-icon">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="../CSS/quanlydonhang.css">
+    <!-- Link icons -->
+    <script src="https://kit.fontawesome.com/522874b971.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="admin_right_bill">
+        <h2>Quản Lý Đơn Hàng</h2>
+        <table class="tbl">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Ngày đặt</th>
+                    <th>Id user</th>
+                    <th>Tên đăng nhập</th>
+                    <th>Đơn đặt</th>
+                    <th>Tổng tiền</th>
+                    <th>Xóa</th>
+                </tr>
+            </thead>
+            <tbody id="orders"></tbody>
+        </table>
+        <!-- The modal -->
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <table class="tbl">
+                    <thead>
+                        <tr>
+                            <th>Số thứ tự</th>
+                            <th>Sản phẩm</th>
+                            <th>Số lượng</th>
+                            <th>Giá</th>
+                            <th>Tổng tiền</th>
+                        </tr>
+                    </thead>
+                    <tbody id="detail_order"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- axios -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <!-- Link js -->
+
+    <script src="../JS/quanlydonhang.js"></script>
+    <script src="../JS/modal.js"></script>
+
+</body>
+
+</html>
